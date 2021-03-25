@@ -1,0 +1,283 @@
+*, ::before, ::after {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box; 
+}
+/* DESING FOR MOBILE */
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 9px;
+    background-color: hsl(210, 46%, 95%);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;   
+}
+
+    .card {
+        max-width: 22rem;
+        background-color: #FFFFFF;
+        margin: 0 1rem;
+        border-radius: 0 0 0.8rem 0.8rem;
+        -webkit-box-shadow: 10px 10px 38px -1px rgba(0,0,0,0.1);
+        -moz-box-shadow: 10px 10px 38px -1px rgba(0,0,0,0.1);
+        box-shadow: 10px 10px 38px -1px rgba(0,0,0,0.1);
+        position: relative;
+    }
+
+    .header__image {   
+        width: 100%;
+        height: 204px;
+        background-image: url("./images/drawers.jpg");
+        background-position: -15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0.8rem 0.8rem 0 0;
+        transform: translateY(-12px);
+    }
+
+    .wrap__content {
+        padding: 0.5rem 1.8rem;
+    }
+
+    .card__content h1{
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: hsl(217, 19%, 35%);
+    }
+
+    .card__content p{
+        font-weight: 500;
+        font-size: 12px;
+        color: hsl(214, 17%, 51%);
+    }
+
+    .btn{
+        display: flex;
+        justify-content: end;
+        margin: -16px;
+    }
+
+    .circle__btn {
+        transform: translateY(-46px) translateX(-45px);
+        height: 2rem;
+        width: 2rem;
+        background-color: hsl(210, 46%, 95%);
+        border-radius: 50%;
+        z-index: 1; 
+    }
+
+    .fake__circle {
+        position: absolute;
+        transform: translateY(-46px) translateX(-45px);
+        height: 2rem;
+        width: 2rem;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 50%;
+        z-index: 1000000; 
+        cursor: pointer;
+    }
+
+    .footer__share {
+        display: flex; 
+        margin: 1.5rem 1.8rem;
+    }
+
+    .footer__share img {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+    
+    .footer__share__btn {
+        transform: translateY(-39px) translateX(28px);
+        margin-right: 3rem;
+        z-index: 2;
+        height: 15px;
+        width: 17px;
+        cursor: pointer;
+    }
+
+    .align__content p:first-of-type {
+        font-size: 13px;
+        margin-bottom: 0.3rem;
+        font-weight: 700;
+        color: hsl(217, 19%, 35%);
+    }
+
+    .align__content {
+        color: hsl(214, 17%, 51%);
+        font-size: 12px;
+    }
+
+    .pop-up__share {
+        display: none;
+        align-items: center;
+        justify-content: start;
+        background-color: hsl(217, 19%, 35%);
+        bottom: 15%;
+        width: 100%;
+        height: 5.5rem;
+        border-radius: 0 0 0.8rem 0.8rem;
+        position: absolute;
+        bottom: 0%;
+        transition: all 1s ease;
+    }
+
+
+    .pop-up__share p {
+        color: hsl(212, 23%, 69%);
+        font-size: 17px;
+        letter-spacing: 3px;
+        margin-right: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .pop-up__share a {
+        padding: 0 0.5rem;
+    }
+
+/* DESING FOR DESKTOP */
+
+@media (min-width: 54rem) {
+    body {
+        font-size: 13px;
+    }
+
+    .card { 
+        position: relative;
+        margin-left: 17rem;
+        max-width: 37rem;
+        background-color:#FFF; 
+        border-radius: 0 0.8rem 0.8rem 0;
+        -webkit-box-shadow: 6px 7px 21px -3px rgba(0,0,0,0.32);
+        -moz-box-shadow: 6px 7px 21px -3px rgba(0,0,0,0.32);
+        box-shadow: 6px 7px 21px -3px rgba(0,0,0,0.32);
+    }
+
+    .header__image {
+        position: absolute;
+        left: -46%;
+        width: 17rem;
+        height: 100%;
+        background-image: url("./images/drawers.jpg");
+        background-position: 11%;
+        background-size: cover;
+        border-radius: 0.8rem 0 0 0.8rem;
+        transform: translateY(-0.5px)
+    }
+
+    .wrap__content { 
+        display: flex;
+        align-items: center;
+        padding-top: 1.5rem;
+        margin-left: 3rem;
+        margin-right: 6rem;
+    }
+
+    .wrap__content h1 {
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: hsl(217, 19%, 35%);
+    }
+
+    .wrap__content p {
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(214, 17%, 51%);
+    }
+
+    .align__content p:first-of-type {
+        margin-bottom: 0.2rem;
+        font-weight: 700;
+        color: hsl(217, 19%, 35%);
+    }
+
+    .align__content {
+        color: hsl(214, 17%, 51%);
+    }
+
+    .footer__share {
+        display: flex; 
+        margin-left: 5rem;
+        margin-top: 1rem;
+        height: 2.5rem;
+    }
+
+    .footer__share img {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+
+    .footer__share__btn {
+        transform: translateY(-37px) translateX(3px);
+        margin-right: 3rem;
+        z-index: 2;
+        height: 15px;
+        width: 17px;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: end;
+    }
+
+    .circle__btn {
+        height: 2rem;
+        width: 2rem;
+        background-color: hsl(210, 46%, 95%);
+        border-radius: 50%;
+        transform: translateY(-45px) translateX(-70px);
+        z-index: 1; 
+    }
+
+
+
+    .fake__circle {
+        position: absolute;
+        transform: translateY(-46px) translateX(-70px);
+        height: 2rem;
+        width: 2rem;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 50%;
+        z-index: 1000000;
+        cursor: pointer;
+    }
+
+    /* after click on btn share */
+
+    .pop-up__share {
+        position: absolute;
+        left: 66%;
+        bottom: 24%;
+        background-color: hsl(217, 19%, 35%);
+        width: 13rem;
+        height: 3rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+
+    }
+
+    .pop-up__share p {
+        letter-spacing: 3px;
+        color: #FFFFFF;
+        margin: 0;
+        margin-right: 0.5rem;
+        font-size: 14px;
+    }
+
+    .triangle {
+        position: absolute;
+        border-top: 15px solid hsl(217, 19%, 35%);
+        border-right: 12px solid transparent;
+        border-left: 12px solid transparent;
+        left: 58%;
+        bottom: -30%;
+    }
+}
